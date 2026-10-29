@@ -1,0 +1,90 @@
+<mxfile host="Electron" agent="ChatGPT">
+  <diagram id="fizzbuzz-flow" name="Página-1">
+    <mxGraphModel dx="1483" dy="912" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=#82b366;fontStyle=1;" value="Início" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="input" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#6c8ebf;" value="Leia um número" vertex="1">
+          <mxGeometry height="60" width="160" x="330" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="d15" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#d6b656;" value="É múltiplo de 15?&#xa;(numero % 15 == 0)" vertex="1">
+          <mxGeometry height="110" width="190" x="315" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="VV566jX4TCG2YfTS0Zg8-3" edge="1" parent="1" source="fizzbuzz" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="639.9036144578315" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fizzbuzz" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#9673a6;fontStyle=1;" value="Exiba FIZZBUZZ" vertex="1">
+          <mxGeometry height="60" width="160" x="560" y="265" as="geometry" />
+        </mxCell>
+        <mxCell id="d3" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#d6b656;" value="É múltiplo de 3?&#xa;(numero % 3 == 0)" vertex="1">
+          <mxGeometry height="110" width="190" x="315" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="VV566jX4TCG2YfTS0Zg8-4" edge="1" parent="1" source="fizz" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;defaultLabelBackgroundColor=page;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="639.9036144578315" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fizz" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#9673a6;fontStyle=1;" value="Exiba FIZZ" vertex="1">
+          <mxGeometry height="60" width="160" x="560" y="445" as="geometry" />
+        </mxCell>
+        <mxCell id="d5" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#d6b656;" value="É múltiplo de 5?&#xa;(numero % 5 == 0)" vertex="1">
+          <mxGeometry height="110" width="190" x="315" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="buzz" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#9673a6;fontStyle=1;" value="Exiba BUZZ" vertex="1">
+          <mxGeometry height="60" width="160" x="560" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="number" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#6c8ebf;" value="Exiba o próprio número" vertex="1">
+          <mxGeometry height="60" width="180" x="55" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeColor=#82b366;fontStyle=1;" value="Fim" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="input">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="input" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="d15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="d15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="fizzbuzz" value="Sim">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="d15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="d3" value="Não">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="d3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="fizz" value="Sim">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="d3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="d5" value="Não">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="d5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="buzz" value="Sim">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="d5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="number" value="Não">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="buzz" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="end">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="755" />
+              <mxPoint x="410" y="755" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="number" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" target="end">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="145" y="780" />
+              <mxPoint x="410" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
