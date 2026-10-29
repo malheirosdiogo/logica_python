@@ -1,3 +1,4 @@
+
 import datetime
 import calendar
 
@@ -16,11 +17,35 @@ meses = [
     "Dezembro",
 ]
 
-# 21/12/2024
-data = datetime.date(2024, 12, 21)  #Para retornar data (formato americano)
+dias_semana = [
+    "Segunda-feira",
+    "Terça-feira",
+    "Quarta-feira",
+    "Quinta-feira",
+    "Sexta-feira",
+    "Sábado",
+    "Domingo",
+]
+
+# Data específica
+data = datetime.date(2024, 12, 21)
 print(data)
 
-hoje = datetime.date.today()  #Para retornar data de hoje (formato americano)
+# Data atual
+hoje = datetime.date.today()
 print(hoje)
-print(hoje.strftime("%d/%m/%Y"))  #Para retornar formato de data brasileiro
-print(f"São Paulo, {hoje.weekday()}, {hoje.day} de {meses[hoje.month - 1]} de {hoje.year}")
+
+# Data no formato brasileiro
+print(hoje.strftime("%d/%m/%Y"))
+
+# Data completa por extenso
+print(
+    f"São Paulo, {dias_semana[hoje.weekday()]}, "
+    f"{hoje.day} de {meses[hoje.month - 1]} de {hoje.year}"
+)
+
+# Verificar se o ano é bissexto
+print(f"2024 é Bissexto: {calendar.isleap(2024)}")
+
+# Retornar o último dia do mês
+print(f"É o último dia do mês? {calendar.monthrange(2026, 10)[1]}")
